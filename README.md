@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  NexSoc — Your Privacy is our Priority
 
-## Getting Started
+**NexSoc** is a real-time, full-featured chat application built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Socket.IO**. Designed to support 1-1 chat, group chat, community interactions, and AI chatbot capabilities, NexSoc is crafted for performance, scalability, and a beautiful modern UI.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Core Chat Functionality
+- **One-to-One Chat** – Private real-time conversations between two users.
+- **Group Chat** – Chat rooms for multiple participants with name, avatar, and group controls.
+- **Communities Support** – Join or create community spaces for shared discussions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### AI Integration
+- **AI Chatbot** – Ask questions or get suggestions from an integrated AI assistant.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### User Management
+- **User Profiles** – Custom profile page with avatar, bio, and recent chats.
+- **Authentication** – Secure user auth with JWT/session (login, signup, logout).
+- **Presence Detection** – Online/offline indicators using Socket.IO.
 
-## Learn More
+### Admin Panel
+- **User Management** – View all users, delete accounts, or ban/unban users.
+- **Community Oversight** – Moderate group chats and community spaces.
 
-To learn more about Next.js, take a look at the following resources:
+### Reusable UI Components
+- Modular components designed using Tailwind CSS and utility-first patterns.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Real-Time & Scalable
+- Uses **Socket.IO** for real-time messaging and live updates.
+- Built on **Next.js App Router** and server components for performance.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
+## Tech Stack
 
-## Deploy on Vercel
+- Frontend	-> Next.js (App Router), TypeScript, Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Real-time	-> Socket.IO (client + server)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Backend API -> Node.js (inside Next.js API routes)
+
+- Auth	-> JWT or Session (NextAuth/custom)
+
+- Database ->	Prisma / Mongo Db 
+
+- AI Bot ->	OpenAI API or custom LLM model
+
+- Admin Panel ->	Role-based protected routes
