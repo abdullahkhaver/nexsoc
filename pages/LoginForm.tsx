@@ -29,6 +29,7 @@ const LoginPage = () => {
       showToast("Please fill in all fields", "error");
       return;
     }
+    showToast("Logging in...", "info");
 
     try {
       const res = await signIn("credentials", {
